@@ -1,0 +1,311 @@
+/* import font */
+@font-face {
+	font-family: "Tan_Nimbus";
+	src: url(TAN-NIMBUS.ttf);
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.title{
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	font-family: "Tan_Nimbus";
+	/* font-size: 75px; */
+	font-size: 6vw;
+	color:#0b1956;
+}
+
+.nav_bar{
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100px;
+	background-color: #0b1956;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.nav_bar a{
+	font-family: "Tahoma";
+	font-size: 20px;
+	text-decoration: none;
+	margin: 20px;
+	padding: 20px;
+}
+
+.nav_bar a:link{color: #fefefe;}
+.nav_bar a:visited{color: #9ecdfb;}
+.nav_bar a:hover{
+	color: #fefefe;
+	text-decoration: underline;
+}
+.nav_bar a:active{color: #faf3eb;}
+
+.logo_img{
+	height: 60px;
+	width: auto;
+	display: block;
+	object-fit: contain;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.title_heading{
+	display: grid;
+	grid-template-areas: "stack";
+	place-items: center;
+	position: relative;
+}
+
+.portfolio_text{
+	grid-area: stack;
+	z-index: 1;
+	margin: 0;
+}
+
+.person_icon{
+	display: inline-block;
+	position: relative;
+	bottom: -125px;
+	grid-area: stack;
+	height: 350px; 
+	z-index: 2;
+	transition: transform 0.3s ease; /*animation duration*/
+}
+
+.rectangle_bar{
+	width: 100%;
+	height: 150px;
+	background-color: #0b1956;
+	margin-top: -60px;
+	z-index: 3;
+}
+
+body{
+	background-color:#e5d8c7;
+	font-family: "Tahoma";
+	margin: 0;
+}
+
+.content{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*=====================================================================================*/
+/*AUTOBIOGRAPHY*/
+.autobiography{
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*two columns w/ the same size*/
+	gap: 30px;
+	font-family: "Tahoma";
+	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.autobiography h1{
+	font-family: "Tan_Nimbus"; /*overwritten ung tahoma*/
+	font-size: 45px;
+	color:#0b1956;
+}
+
+.autobiography p{
+	font-size: 18px;
+	padding-left: 10px;
+	line-height: 1.5;
+}
+
+.featured_photo{
+	text-align: center; 
+}
+
+.featured_photo h2{
+	font-size: 20px;
+}
+
+.featured_photo p{
+	font-size: 15px;
+}
+
+.featured_photo img{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	max-width: 225px;
+	border: 5px solid #0b1956;
+	border-radius: 1vw;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	transition: transform 0.3s ease; 
+}
+
+/*=====================================================================================*/
+/*MANAGEMENT SKILLS AND WEB PROGRAMMING SKILLS*/
+.skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 75px;
+	font-family: "Tahoma";
+	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	line-height: 1.5;
+}
+
+.skills h1{
+	font-family: "Tan_Nimbus"; /*overwritten ung tahoma*/
+	font-size: 30px;
+	color:#0b1956;
+}
+
+.skills li{
+	font-size: 18px;
+	padding: 10px;
+	line-height: 1.5;
+}
+.management_skills{
+	background-color: #0b1956;
+	color: #fefefe; 
+	border-radius: 0 20px 20px 0;
+	margin-left: -60px;
+	padding: 50px 0 50px 30px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.management_skills h1{
+	color: #9ecdfb; /*overwrite white tetx color w/ light blue*/
+}
+
+.web_skills{
+	padding: 50px 0 50px 0;
+}
+/*=====================================================================================*/
+/*PROJECTS*/
+.projects{
+	font-family: "Tahoma";
+	font-size: 18px;
+	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.5;
+}
+
+.projects h1{
+	font-family: "Tan_Nimbus"; /*overwritten ung tahoma*/
+	font-size: 45px;
+	color:#0b1956;
+	text-align: center;
+}
+
+.projects h2{
+	font-family: "Tan_Nimbus";
+	font-size: 25px;
+	color:#000;
+}
+
+.project_title{
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	margin-bottom: 60px;
+}
+
+.project_title:nth-child(even) {
+    flex-direction: row-reverse; 
+	/*alternating pattern ng pic at description*/
+}
+
+.project_content{
+	flex:2;
+}
+
+.project_image{
+	flex:1;
+}
+
+.project_image img{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	max-width: 450px;
+	border: 5px solid #0b1956;
+	border-radius: 1vw; 
+	transition: transform 0.3s ease; 
+}
+
+/*=====================================================================================*/
+/*FOOTER*/
+.footer{
+	background-color: #0b1956;
+	color: #fefefe;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	width: 100%;
+}
+
+.footer img{
+	display: block;
+	object-fit: contain;
+	height: 150px;
+	width: auto;
+	padding: 30px;
+}
+
+.footer_info h2{
+	font-family: "Tan_Nimbus";
+	font-size: 25px;
+	margin: 0 0 5px 0;
+}
+
+.footer_info p{
+	font-size: 15px;
+	margin: 2px 0;
+	line-height: 1.5;
+}
+
+.footer a{color: #fefefe;}
+
+/*=====================================================================================*/
+/*MISC STUFF*/
+html { /*smooth scroll when using navbar*/
+  scroll-behavior: smooth;
+}
+
+#autobiographyID, #skillsID, #projectsID { /*gives space for navbar when using it*/
+    scroll-margin-top: 100px;
+}
+
+.title_heading h1{
+	display: inline-block;
+	transition: transform 0.3s ease; 
+
+}
+
+.title_heading h1:hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.title_heading img:hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.featured_photo img:hover{
+	transform: scale(1.1);
+	transform-origin: center;
+}
+
+.projects img:hover{
+	transform: scale(1.1);
+	transform-origin: center;
+}
