@@ -1,6 +1,7 @@
 # CMSC100_calanasan_exer2
 
 Nica Marie B. Calanasan 
+
 BS Computer Science
 
 nbcalanasan.github.io/CMSC100_calanasan_exer2/
